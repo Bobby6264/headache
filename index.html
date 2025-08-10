@@ -1,0 +1,215 @@
+<!DOCTYPE<body>
+    <!-- Authentication Modal -->
+    <div id="auth-modal" class="auth-modal">
+        <div class="auth-content">
+            <div class="auth-header">
+                <h2>🎂 Birthday Authentication 🎂</h2>
+                <div class="auth-subtitle">Please answer this question to continue to your surprise</div>
+            </div>
+            <div class="auth-body">
+                <div class="question">
+                    <p>What do I call you? 💭</p>
+                    <input type="text" id="auth-input" placeholder="Enter your answer..." autocomplete="off">
+                    <button id="auth-submit" class="auth-btn">✨ Enter ✨</button>
+                </div>
+                <div id="auth-error" class="auth-error hidden">
+                    ❌ Hmm, that's not quite right. Try again! 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (initially hidden) -->
+    <div id="main-content" class="hidden">
+        <div class="container">
+            <!-- Floating Hearts -->
+            <div class="floating-hearts">
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">💝</div>
+                <div class="heart">💘</div>
+                <div class="heart">💓</div>
+                <div class="heart">💞</div>
+                <div class="heart">💟</div>
+            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love! 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Floating Hearts -->
+        <div class="floating-hearts">
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💝</div>
+            <div class="heart">💘</div>
+            <div class="heart">💓</div>
+            <div class="heart">�</div>
+            <div class="heart">💟</div>
+        </div>
+
+        <!-- Sparkles Effect -->
+        <div class="sparkles">
+            <div class="sparkle">✨</div>
+            <div class="sparkle">⭐</div>
+            <div class="sparkle">🌟</div>
+            <div class="sparkle">💫</div>
+            <div class="sparkle">⭐</div>
+            <div class="sparkle">✨</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="birthday-card">
+            <div class="card-header">
+                <h1 class="main-title">🎉 Happy Birthday My bubu 🎉</h1>
+                <p class="subtitle">To my beautiful girlfriend who makes life magical and intresting</p>
+            </div>
+
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="layer layer-3"></div>
+                    <div class="layer layer-2"></div>
+                    <div class="layer layer-1"></div>
+                    <div class="candles">
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                        <div class="candle"><div class="flame"></div></div>
+                    </div>
+                </div>
+                <p class="cake-text">Make a wish, beautiful! 🌟</p>
+            </div>
+
+            <!-- Message Slides -->
+            <div class="message-slider">
+                <div class="message-container">
+                    <div class="message active" id="message1">
+                        <h3>💖 You Are My Sunshine 💖</h3>
+                        <p>Every morning I wake up grateful that you're in my life. Your smile lights up my world and your laugh is my favorite sound in the universe! 🌅✨</p>
+                    </div>
+                    <div class="message" id="message2">
+                        <h3>🌹 My Beautiful Rose 🌹</h3>
+                        <p>You're not just beautiful on the outside, but your heart is pure gold. Your kindness, your spirit, and your love make you the most precious person I know! 💎</p>
+                    </div>
+                    <div class="message" id="message3">
+                        <h3>🎈 Adventure Awaits 🎈</h3>
+                        <p>This new year of your life is going to be amazing! I can't wait to create more beautiful memories with you, go on new adventures, and fall in love with you all over again! 🗺️💕</p>
+                    </div>
+                    <div class="message" id="message4">
+                        <h3>🌟 Forever & Always 🌟</h3>
+                        <p>Thank you for being my partner, my best friend, and my first love. I promise to always cherish you, support your dreams, and love you more each day! 💍✨</p>
+                    </div>
+
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="message-nav">
+                    <span class="nav-dot active" onclick="showMessage(1)"></span>
+                    <span class="nav-dot" onclick="showMessage(2)"></span>
+                    <span class="nav-dot" onclick="showMessage(3)"></span>
+                    <span class="nav-dot" onclick="showMessage(4)"></span>
+                </div>
+            </div>
+
+            <!-- Cute Surprise Buttons -->
+            <div class="surprise-buttons">
+                <button class="surprise-btn cute-btn" onclick="showSurprise('love')">
+                    💕 Love Message 💕
+                </button>
+                <button class="surprise-btn cute-btn" onclick="showSurprise('gift')">
+                    🎁 Virtual Gift 🎁
+                </button>
+                <button class="surprise-btn cute-btn" onclick="showSurprise('dance')">
+                    💃 My pyara bubu 💃
+                </button>
+                <button class="surprise-btn cute-btn special-btn" onclick="showSurprise('special')">
+                    ✨ Special Message ✨
+                </button>
+            </div>
+
+            <!-- Surprise Messages -->
+            <div id="surprise-love" class="surprise-message">
+                <div class="surprise-content">
+                    <h2>💕 I Love You Beyond Words! 💕</h2>
+                    <p>You are my heart, my soul, my everything! Every beat of my heart whispers your name! 🥰💓</p>
+                    <div class="love-animation">
+                        <div class="beating-heart">💖</div>
+                        <div class="beating-heart">💕</div>
+                        <div class="beating-heart">💗</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="surprise-gift" class="surprise-message">
+                <div class="surprise-content">
+                    <h2>🎁 Hug & Kisses! 🎁</h2>
+                    <p>Sending you the biggest hug and a million kisses! I wish I could be there to celebrate with you! 🤗😘</p>
+                    <div class="gift-animation">
+                        <div class="gift-box">🎁</div>
+                        <div class="kiss">😘</div>
+                        <div class="kiss">💋</div>
+                        <div class="hug">🤗</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="surprise-dance" class="surprise-message">
+                <div class="surprise-content">
+                    <h2>💃 my bubu 😘😘 💃</h2>
+                    <p>Aji only tora nuhe ,mora b special day , mu mehnat kare ama future pain, bhaut khusi lage mote emiti karibaku 😘😘 🎵🎶</p>
+                    <div class="dance-animation">
+                        <div class="dancer">💃</div>
+                        <div class="music-note">🎵</div>
+                        <div class="music-note">🎶</div>
+                        <div class="music-note">🎼</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="surprise-special" class="surprise-message">
+                <div class="surprise-content">
+                    <h2>✨ You Are My Miracle ✨</h2>
+                    <p>😘 Mu kebe bhabinathili emiti ame duijana keba sangare thiba, i wish ki sabudina pain emiti hi rahiba , and jaldi baha heijiba 🌟👑</p>
+                    <div class="special-animation">
+                        <div class="crown">👑</div>
+                        <div class="star">⭐</div>
+                        <div class="magic">✨</div>
+                        <div class="rainbow">🌈</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enhanced Confetti -->
+        <div class="confetti">
+            <div class="confetti-piece pink"></div>
+            <div class="confetti-piece blue"></div>
+            <div class="confetti-piece gold"></div>
+            <div class="confetti-piece purple"></div>
+            <div class="confetti-piece green"></div>
+            <div class="confetti-piece red"></div>
+            <div class="confetti-piece orange"></div>
+            <div class="confetti-piece yellow"></div>
+            <div class="confetti-piece pink"></div>
+            <div class="confetti-piece blue"></div>
+        </div>
+
+        <!-- Balloons -->
+        <div class="balloons">
+            <div class="balloon balloon1">🎈</div>
+            <div class="balloon balloon2">🎈</div>
+            <div class="balloon balloon3">🎈</div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
